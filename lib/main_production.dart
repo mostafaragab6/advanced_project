@@ -10,5 +10,4 @@ void main() async {
   runApp(DocApp(
     appRouter: AppRouter(),
   ));
-  // features
 }
