@@ -10,4 +10,10 @@ void main() async {
   runApp(DocApp(
     appRouter: AppRouter(),
   ));
+  runApp(
+    DocApp(
+      appRouter: AppRouter(),
+    ),
+    //development
+  );
 }
