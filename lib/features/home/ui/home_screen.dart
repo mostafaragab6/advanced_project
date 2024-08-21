@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'widgets/doctor_blue_container.dart';
+import 'widgets/doctor_speciality_list_view.dart';
+import 'widgets/doctor_speciality_see_all.dart';
+import 'widgets/doctors_list_view.dart';
 import 'widgets/home_top_bar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -17,9 +22,22 @@ class HomeScreen extends StatelessWidget {
             28,
           ),
           width: double.infinity,
-          child: const Column(
+          child: Column(
             children: [
-              HomeTopBar(),
+              const HomeTopBar(),
+              const DoctorBlueContainer(),
+              SizedBox(
+                height: 24.h,
+              ),
+              const DoctorSpecialitySeeAll(),
+              SizedBox(
+                height: 16.h,
+              ),
+              const DoctorSpecialityListView(),
+              SizedBox(
+                height: 8.h,
+              ),
+              const DoctorsListView(),
             ],
           ),
         ),
