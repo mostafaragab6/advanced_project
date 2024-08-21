@@ -7,10 +7,8 @@ import 'doc_app.dart';
 void main() async {
   setupGetIt();
   await ScreenUtil.ensureScreenSize();
-  runApp(
-    DocApp(
-      appRouter: AppRouter(),
-    ),
-    //development
-  );
+  runApp(DocApp(
+    appRouter: AppRouter(),
+  ));
+  //features
 }
